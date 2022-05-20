@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int arr[8], n,i,max,min;
+	cout<<"size of array:";
+	cin>>n;
+	cout<<"element of array:";
+	for(i=0; i<n; i++)
+	cin>>arr[i];
+	max=arr[0];
+	for(i=0; i<n;i++ )
+	{
+		if(max<arr[i])
+		max=arr[i];
+	}
+	min=arr[0];
+	for(i=0; i<n;i++)
+	{
+		if(min>arr[i])
+		min=arr[i];
+	}
+	cout<<">>output<<";
+	cout<<"largest element:"<<max<<endl;
+	cout<<"smallest element:"<<min<<endl;
+}
